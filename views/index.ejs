@@ -1,0 +1,49 @@
+<% include header %>
+
+
+	<div class="row row1 ">
+		<div class="col text-center col1">
+			<h2>ToDo List</h2>
+		</div>
+	</div>
+		
+	<div class="row row2 clearfix">
+		<div class="col col2 text-left">
+			All Tasks
+			<i class="fas fa-angle-down droparrow"></i>
+		</div>
+		
+		<div class="col col3 text-right ">
+			<img src="/list.svg" alt="list" height="20px" width="20px" >
+			<img src="/thumbnails.svg" alt="thumbnails" height="22px" width="22px">
+		</div>
+	</div>
+		
+	<div class="row row3 clearfix">
+		<div class="col">
+			<form action="/index" method="POST" class="form-inline">
+				<input type="text" id="new-task" name="todo[text]" class="form-control" placeholder="Create New Task...">
+				<button class="btn p-0 addButton" type="submit" ><i class="fas fa-plus-circle addicon"></i></button>
+			</form>
+		</div> 
+	</div>
+
+	<div class="row row4 scrollbar">
+		<div class="col col4 ">
+			<ul class="list-group list-group-flush list mx-auto" id="incomplete-tasks">
+				<% todos.forEach(function(todo){ %>
+					<li class="list-group-item list-group-item-action list-group-item-light uli">
+						<input type="checkbox" id="checkbox" />
+   						<label for="checkbox" class="cb"></label>
+						<span class="lead"><%= todo.text %></span>
+						<p class="tododate">Today</p>
+						<div class="clearfix"></div>
+					</li>
+				<% }); %>
+			</ul>
+			<ul class="list-group list-group-flush list" id="completed-tasks"></ul>
+		</div>
+	</div>
+
+
+<% include footer %>

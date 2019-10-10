@@ -1,0 +1,311 @@
+* {
+	font-family: 'Exo 2', sans-serif;
+}
+
+
+.container1 {
+    margin: auto;
+}
+
+.row2, .row3 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row1, .row2, .row3 {
+    padding: 10px 15px;
+    border-width:1px;  
+    border-bottom-style:solid;
+    border-bottom-color: #e8e7ff;
+}
+
+.col2 {
+    padding: 0;
+    margin: 0;
+}
+
+.col3 {
+    padding-right: 15px;
+    float: right;
+}
+
+
+.cb {
+    margin-right: 15px;
+}
+
+.row4 label {
+    background-color: #fff;
+    border: 1px solid #e8e7ff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    height: 28px;
+    width: 28px;
+  }
+  
+  .row4 label:after {
+    border: 2px solid #e8e7ff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+    
+  }
+  
+  .row4 input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .row4 input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+  }
+  
+  .row4 input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+  
+.droparrow {
+    margin-left: 4px;
+}
+
+#new-task {
+    border-radius: 0;
+    height: 30px;
+    width: 21em;
+}
+
+.taskbtn {
+    padding-left: 0;
+}
+
+.addicon {
+    color: orangered;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.addicon2 {
+    font-size: 1.5em;
+	padding: 2px;
+    color: orangered;
+    background: none;
+}
+
+.addButton {
+    margin-left: 0.5em;
+}
+
+.uli {
+    width: 108%;
+    vertical-align: middle;
+}
+
+.tododate {
+    color: red;
+    font-size: 11px;
+    float: right;
+    margin: auto;
+    margin-top: 8px;
+}
+
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+.scrollbar {
+    height: 413px;
+    overflow-y: scroll;;
+}
+.scrollbar::-webkit-scrollbar { width: 0 !important }
+
+
+ .lead {
+     margin-left: 20px;
+     vertical-align: baseline;
+ } 
+
+#completed-tasks {
+    opacity: 0.5;
+}
+
+.navb {
+    position: fixed;
+}
+
+.navbar {
+    padding: 0.5rem 4rem;
+}
+
+@media screen and (min-width: 800px) {
+    .container1 {
+        margin: 20px auto;
+        width: 400px;
+        height: 650px;
+        border: 4px solid #e8e7ff;
+        border-radius: 6px;
+        background-color:white;
+    }
+    
+    .row1, .row2, .row3 {
+        margin-left: 0;
+        padding: auto;
+        border-width:1px;  
+        border-bottom-style:solid;
+        border-bottom-color: #e8e7ff;
+    }
+    
+    .col2 {
+        padding: auto;
+        margin: auto;
+    }
+    
+    .droparrow {
+        margin-left: 4px;
+    }
+    
+    .col3 {
+        top: 0;    
+        float: right;
+    }
+    
+    .row2, .row3 {
+        padding: 10px 0;
+    }
+    
+    #new-task {
+        border-radius: 0;
+        height: 30px;
+        size: 29;
+    }
+    
+    .taskbtn {
+        padding-left: 0;
+    }
+    
+    .addicon {
+        color: orangered;
+        font-size: 1.8em;
+        margin: 0;
+        
+        margin-top: 2px;
+    }
+    
+    .addicon2 {
+        font-size: 1.5em;
+        padding: 2px;
+        color: orangered;
+        background: none;
+    }
+    
+    .addButton {
+        padding: 0;
+    }
+    
+    .uli {
+        width: 108%;
+        vertical-align: middle;
+    }
+    
+    .tododate {
+        color: red;
+        font-size: 11px;
+        float: right;
+        margin: auto;
+        margin-top: 8px;
+    }
+    
+    #completed-tasks label {
+        text-decoration: line-through;
+        color: #888;
+      }
+    
+    .scrollbar {
+        height: 413px;
+        overflow-y: scroll;;
+    }
+    .scrollbar::-webkit-scrollbar { width: 0 !important }
+    
+    
+    .row4 label {
+        background-color: #fff;
+        border: 1px solid #e8e7ff;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        height: 28px;
+        width: 28px;
+      }
+      
+      .row4 label:after {
+        border: 2px solid #e8e7ff;
+        border-top: none;
+        border-right: none;
+        content: "";
+        height: 6px;
+        left: 7px;
+        opacity: 0;
+        position: absolute;
+        top: 8px;
+        transform: rotate(-45deg);
+        width: 12px;
+        
+      }
+      
+      .row4 input[type="checkbox"] {
+        visibility: hidden;
+      }
+      
+      .row4 input[type="checkbox"]:checked + label {
+        background-color: #66bb6a;
+        border-color: #66bb6a;
+      }
+      
+      .row4 input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+      }
+      
+     .lead {
+         margin-left: 20px;
+         vertical-align: baseline;
+     } 
+    
+    #completed-tasks {
+        opacity: 0.5;
+    }
+    
+    .navb {
+        margin-top: 32px; 
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        position: inherit;
+    }
+    
+    .navbar {
+        padding: 0.5rem 4rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #new-task {
+        width: 18em;
+    }
+
+    .col {
+        padding-right: 0;
+    }
+}
